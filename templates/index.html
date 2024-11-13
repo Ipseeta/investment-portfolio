@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Investment Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include the Chart.js Data Labels plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+</head>
+<body>
+    <h1>Investment Portfolio</h1>
+    <form id="dataForm">
+        <label for="salary">Monthly In-Hand Salary:</label>
+        <input type="number" id="salary" name="salary" required><br><br>
+
+        <label for="emi">Mandatory EMIs:</label>
+        <input type="number" id="emi" name="emi" value="0"><br><br>
+
+        <label for="other_expenses">Other Expenses:</label>
+        <input type="number" id="other_expenses" name="other_expenses" value="0"><br><br>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <canvas id="chart" width="400" height="400"></canvas>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
